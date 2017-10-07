@@ -1,0 +1,17 @@
+{
+  "name": "daily_luck_dev",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://DailyLuck.github.io/daily_luck_dev", 
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "npm run build&&gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
