@@ -19,15 +19,11 @@ let unsubscribe = store.subscribe(() => {
 
 ReactDOM.render(
 	<Provider store={store}>
-	  <Router>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={App}/>
-      </Router>
+	  <ConnectedRouter history={ createHistory() } >
+	    <div>
+	      <Route exact path={process.env.PUBLIC_URL + '/'} component={App}/>
+	    </div>
+	  </ConnectedRouter>
 	</Provider>,document.getElementById('root'));
 registerServiceWorker();
 
-
-// <ConnectedRouter history={ createHistory() } >
-// 	    <div>
-// 	      <Route exact path={process.env.PUBLIC_URL + '/'} component={App}/>
-// 	    </div>
-// 	  </ConnectedRouter>
